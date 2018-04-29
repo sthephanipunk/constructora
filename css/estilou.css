@@ -37,14 +37,22 @@ form:after {
 	clear: both;
 	visibility: hidden;
 }
-.container { 
-	margin: 25px auto; 
-	position: relative; 
-	width: 900px; }
-	/*width:999px;
-	max-width:999px;
-	margin:0 auto;*/ 
+/*contenedor de index login*/
+.container {
+	margin: 95px auto; 
+	position: relative;
+	width: 450px;  
 } 
+/*contenedor imagen login*/
+.container-imagenes\usua.png{
+	background-color: #464646;
+	width:50%;
+}
+
+img{
+	width:50%;
+	max-width:420px;
+}
 #content {
 	background: #f9f9f9;
 	background: -moz-linear-gradient(top,  rgba(248,248,248,1) 0%, rgba(249,249,249,1) 100%);
@@ -66,6 +74,7 @@ form:after {
 	text-shadow: 0 1px 0 #fff;
 	width: 400px;
 }
+/*letras de login iniciar iniciar secion */
 #content h1 {
 	color: #7E7E7E;
 	font: bold 25px Helvetica, Arial, sans-serif;
@@ -134,6 +143,7 @@ form:after {
 	top: 0;
 	z-index: -2;
 }
+/*botones de login*/
 #content form { margin: 0 20px; position: relative }
 #content form input[type="text"],
 #content form input[type="password"] {
@@ -255,3 +265,4 @@ form:after {
 	background-position: 0 -135px;
 	color: #00aeef;
 }
+
