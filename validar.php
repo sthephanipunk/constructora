@@ -3,7 +3,7 @@
 	session_start();
 	ob_start();
     include("conexion.php");
-     $con=conectar();
+    
      
     $username=$_POST['id'];
 	$pass=$_POST['contra'];

@@ -19,18 +19,32 @@ body{
 form{
 	margin: auto;
 	width: 50%;
-	max-width: 350px;
+	max-width: 380px;
 	background: #F3F3F3;
-	padding: 30PX;
+	padding: 50PX;
 	border: 1px solid rgba(0,0,0,0.2);
+
+}
+
+
+img{
+	width:100%;
+	max-width:190px;
+	margin-left:53px;
+	
+	
 }
 
 h1{
 	text-align: center;
 	margin-bottom: 20px;
-	color: rgba(0,0,0,0.5);
-	
+	color:#7E7E7E;
+	font: bold 35px Helvetica, Arial, sans-serif;
+	letter-spacing: -0.05em;
+	line-height: 20px;
+	margin: 10px 0 30px;		
 }
+
 
  input{
 	display: block;
@@ -38,16 +52,66 @@ h1{
 	width: 100%;
 	margin: 10px 0;
 	font-size: 20px;
+
+}
+
+ input[type="text"],
+ input[type="password"] {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0,0,0,0.08) inset;
+	-moz-box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0,0,0,0.08) inset;
+	-ms-box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0,0,0,0.08) inset;
+	-o-box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0,0,0,0.08) inset;
+	box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0,0,0,0.08) inset;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	background: #eae7e7 url(http://cssdeck.com/uploads/media/items/8/8bcLQqF.png) no-repeat;
+	border: 1px solid #c8c8c8;
+	color: #777;
+	font: 13px Helvetica, Arial, sans-serif;
+	margin: 0 0 10px;
+	padding: 15px 0px 15px 40px;
+	width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+	-webkit-box-shadow: 0 0 2px #ed1c24 inset;
+	-moz-box-shadow: 0 0 2px #ed1c24 inset;
+	-ms-box-shadow: 0 0 2px #ed1c24 inset;
+	-o-box-shadow: 0 0 2px #ed1c24 inset;
+	box-shadow: 0 0 2px #ed1c24 inset;
+	background-color: #fff;
+	border: 1px solid #ed1c24;
+	outline: none;
+}
+
+#username { 
+	background-position: 10px 10px !important 
+}
+#password {  
+	background-position: 10px -53px !important 
 }
 
 input[type="submit"]{
-	background: linear-gradient(#FFDA63, #FF8940);
-	border: 0;
-	color: black;
-	opacity: 0.8;
+	background: rgb(254,231,154);
+	background: -webkit-linear-gradient(top,  rgba(254,231,154,1) 0%,rgba(254,193,81,1) 100%);
+	border: 1px solid #D69E31;
+	color: #85592e;
+	float: left;
+	font: bold 15px Helvetica, Arial, sans-serif;
+	height: 35px;
 	cursor: pointer;
-	border-radius: 20px;
-	margin-bottom: 0;
+	border-radius: 30px;
+    margin-bottom: 0;
+	width: 120px;
 }
 
 input[type="sumit"]:hover {
@@ -64,7 +128,12 @@ input[type="submit"]:active {
 	}
 
 @media (max-width:480px){
-	form{
+	form{ 
 		width: 65%;
 	}
 }
+@media (max-width:480px){
+	img{
+		position:relative; 
+		right:45px;
+	}

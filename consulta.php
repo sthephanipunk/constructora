@@ -1,10 +1,6 @@
-
-               
-                  <?php
-
+ <?php
   session_start();
-  ob_start();
-
+   ob_start();
 
       $nombre_bodega = $_POST['buscar'];
       print("<br>Se recibio: ".$nombre_bodega);
@@ -14,11 +10,11 @@
       }
       else
       {
-          $link = mysql_connect ('localhost','root','');
-          mysql_select_db('ch',$link);
+          $link = mysqli_connect ('localhost','root','');
+          mysqli_select_db('ch',$link);
           print("<br>Conectando con el servidor MySQL y con la BD...");
     
-          $resultado = mysql_query("select * from bodega where nombre_bodega like \"%$nombre_bodega%\" ");
+          $resultado = mysqli_query("select * from bodega where nombre_bodega like \"%$nombre_bodega%\" ");
           print("<br>Se realizo la consulta y el resultado es: ");
 
           
